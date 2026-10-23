@@ -1,83 +1,54 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Spotlight effect for cards
-    const cards = document.querySelectorAll('.card');
+/* Ahmad Bashir - portfolio. Minimal progressive enhancement:
+   current year, a hairline on the header once scrolled, and
+   active-section highlighting in the nav. No dependencies. */
+(function () {
+  "use strict";
 
-    document.body.addEventListener('mousemove', (e) => {
-        for (const card of cards) {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
+  // Current year in the footer
+  var yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-            card.style.setProperty('--mouse-x', `${x}px`);
-            card.style.setProperty('--mouse-y', `${y}px`);
-        }
-    });
-
-    // Intersection Observer for Navigation Highlighting
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('nav ul li a');
-
-    const observerOptions = {
-        root: null,
-        rootMargin: '-20% 0px -80% 0px',
-        threshold: 0
+  // Show the header's bottom hairline only after scrolling past the hero top
+  var header = document.getElementById("site-header");
+  if (header) {
+    var onScroll = function () {
+      header.setAttribute("data-scrolled", window.scrollY > 8 ? "true" : "false");
     };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Remove active from all
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                });
+  // Highlight the nav link for the section currently in view
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav__links a[href^="#"]'));
+  var byId = {};
+  links.forEach(function (a) {
+    byId[a.getAttribute("href").slice(1)] = a;
+  });
 
-                // Add active to current
-                const activeId = entry.target.getAttribute('id');
-                const activeLink = document.querySelector(`nav ul li a[href="#${activeId}"]`);
-                if (activeLink) {
-                    activeLink.classList.add('active');
-                }
-            }
-        });
-    }, observerOptions);
+  var sections = links
+    .map(function (a) { return document.getElementById(a.getAttribute("href").slice(1)); })
+    .filter(Boolean);
 
-    sections.forEach(section => observer.observe(section));
+  var setCurrent = function (id) {
+    links.forEach(function (a) { a.removeAttribute("aria-current"); });
+    if (id && byId[id]) byId[id].setAttribute("aria-current", "true");
+  };
 
-    // Force highlight "About" on load if we are at the top
-    window.addEventListener('scroll', () => {
-        // Highlight About at the very top
-        if (window.scrollY < 100) {
-            navLinks.forEach(link => link.classList.remove('active'));
-            const aboutLink = document.querySelector('nav ul li a[href="#about"]');
-            if (aboutLink) aboutLink.classList.add('active');
-        }
+  if ("IntersectionObserver" in window && sections.length) {
+    var visible = {};
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        visible[entry.target.id] = entry.isIntersecting ? entry.intersectionRatio : 0;
+      });
+      // Pick the most-visible observed section
+      var bestId = null, best = 0;
+      sections.forEach(function (s) {
+        var v = visible[s.id] || 0;
+        if (v > best) { best = v; bestId = s.id; }
+      });
+      setCurrent(bestId);
+    }, { rootMargin: "-40% 0px -50% 0px", threshold: [0, 0.25, 0.5, 1] });
 
-        // Highlight the last section if we're at the very bottom of the page
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
-            navLinks.forEach(link => link.classList.remove('active'));
-            const lastLink = navLinks[navLinks.length - 1];
-            if (lastLink) lastLink.classList.add('active');
-        }
-    });
-
-    // Reveal animations
-    const revealElements = document.querySelectorAll('.card, .section-title, .text-body');
-
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('revealed');
-                // Optional: stop observing once revealed
-                // revealObserver.unobserve(entry.target); 
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    });
-
-    revealElements.forEach(el => {
-        el.classList.add('reveal-hidden');
-        revealObserver.observe(el);
-    });
-});
+    sections.forEach(function (s) { observer.observe(s); });
+  }
+})();

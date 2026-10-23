@@ -2,574 +2,485 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Bashir | AI/ML Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ahmad Bashir | Senior Machine Learning Engineer</title>
+  <meta name="description"
+    content="Ahmad Bashir is a senior machine learning engineer working on generative video and computer vision at Colossyan, with research in 3D reconstruction and neural radiance fields at ITU's Intelligent Machines Lab.">
+  <meta name="author" content="Ahmad Bashir">
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="canonical" href="https://ahmad-bashir9.github.io/portfolio/">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ahmad Bashir | Senior Machine Learning Engineer">
+  <meta property="og:description"
+    content="Generative video and computer vision at Colossyan; research in 3D reconstruction and NeRF. Selected work, research, and experience.">
+  <meta property="og:url" content="https://ahmad-bashir9.github.io/portfolio/">
+  <meta property="og:image" content="https://ahmad-bashir9.github.io/portfolio/assets/profile.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ahmad Bashir | Senior Machine Learning Engineer">
+  <meta name="twitter:description"
+    content="Generative video and computer vision at Colossyan; research in 3D reconstruction and NeRF.">
+  <meta name="twitter:image" content="https://ahmad-bashir9.github.io/portfolio/assets/profile.png">
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahmad Bashir",
+    "jobTitle": "Senior Machine Learning Engineer",
+    "worksFor": { "@type": "Organization", "name": "Colossyan" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Information Technology University of the Punjab" },
+    "url": "https://ahmad-bashir9.github.io/portfolio/",
+    "email": "mailto:ahmad.bashir.ahmed@gmail.com",
+    "sameAs": [
+      "https://github.com/ahmad-bashir9",
+      "https://www.linkedin.com/in/ahmad-bashir93/"
+    ],
+    "knowsAbout": ["Generative AI", "Computer Vision", "Diffusion Models", "Neural Radiance Fields", "3D Reconstruction", "Machine Learning", "Retrieval-Augmented Generation"]
+  }
+  </script>
 </head>
 
 <body>
-    <div class="bg-blob"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="layout">
-        <div class="left-panel">
-            <header>
-                <div class="profile-container">
-                    <img src="assets/profile.png" alt="Ahmad Bashir" class="profile-pic">
-                </div>
-                <h1>Ahmad Bashir</h1>
-                <h2><span class="text-gradient">AI/ML Engineer</span> at Colossyan</h2>
-                <p>I build and optimize cutting-edge generative AI models and real-time machine learning pipelines.</p>
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="#top">Ahmad Bashir</a>
+      <div class="nav__right">
+        <ul class="nav__links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="nav__cv" href="assets/Ahmad_Bashir_CV.pdf" download aria-label="Download CV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16" />
+          </svg>
+          CV
+        </a>
+      </div>
+    </nav>
+  </header>
 
-                <a href="assets/Ahmad_Bashir_CV.pdf" download class="btn-download">
-                    Download CV <i class="fas fa-download"></i>
+  <main id="main" class="shell">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <h1 class="hero__name">Ahmad Bashir</h1>
+      <p class="hero__tagline">Senior machine learning engineer working on generative video and computer vision.</p>
+      <p class="hero__bio">
+        I build generative-AI systems at <a class="prose-link" href="https://www.colossyan.com" target="_blank"
+          rel="noopener">Colossyan</a>: avatar generation, lip-sync, and the large-scale data pipelines that train
+        them. Before industry, I spent around a year and a half as a research assistant at ITU's <a
+          class="prose-link" href="https://im.itu.edu.pk/" target="_blank" rel="noopener">Intelligent Machines
+          Lab</a>, working on 3D reconstruction, neural radiance fields, and point-cloud methods. I like problems
+        where careful modelling has to hold up as production software.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#work">View selected work</a>
+        <a class="btn btn--ghost" href="assets/Ahmad_Bashir_CV.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16" />
+          </svg>
+          Download CV
+        </a>
+        <div class="social">
+          <a href="https://github.com/ahmad-bashir9" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.2 11.16.6.11.82-.25.82-.56v-2.02c-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.33-1.74-1.33-1.74-1.09-.73.08-.72.08-.72 1.2.08 1.83 1.21 1.83 1.21 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.84 0-1.29.47-2.35 1.24-3.18-.12-.3-.54-1.51.12-3.15 0 0 1.01-.32 3.3 1.21a11.6 11.6 0 0 1 6 0c2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.85.12 3.15.77.83 1.24 1.89 1.24 3.18 0 4.54-2.81 5.54-5.49 5.83.43.37.81 1.1.81 2.22v3.29c0 .31.21.68.82.56C20.56 21.88 24 17.48 24 12.29 24 5.78 18.63.5 12 .5Z" /></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ahmad-bashir93/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" /></svg>
+          </a>
+          <a href="mailto:ahmad.bashir.ahmed@gmail.com" aria-label="Email Ahmad">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" /><path d="m3 7 9 6 9-6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="section" id="work">
+      <h2 class="section__label">Selected work</h2>
+      <div class="section__body">
+        <p class="lead-in">A few projects across the areas I work in: generative video, large-scale data, 3D,
+          and agentic systems. Where each one happened (employment, research, or a personal project) is noted
+          under its title.</p>
+
+        <!-- 1 -->
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Avatar generation &amp; lip-sync</h3>
+            <span class="entry__year">2023 – present</span>
+          </div>
+          <p class="entry__meta">Colossyan, employment</p>
+          <p class="entry__desc">
+            Redesigned the core avatar-generation pipeline and built deep-learning models for gesture synthesis
+            and speech-to-video synchronisation. The work improved lip-sync accuracy and overall avatar fidelity
+            by roughly 20%, raised the realism of generated video in production, and contributed to a measurable
+            increase in user engagement.
+          </p>
+          <p class="entry__tech">Python, PyTorch, diffusion models</p>
+        </article>
+
+        <!-- 2 -->
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Large-scale distributed video-data pipeline</h3>
+            <span class="entry__year">2025</span>
+          </div>
+          <p class="entry__meta">Colossyan, employment</p>
+          <p class="entry__desc">
+            Architected a distributed pipeline on Apache Spark and Argo Workflows that runs raw footage through
+            six frame- and video-level quality filters. It cleaned more than 10,000 hours of video and curated
+            the high-quality subset that downstream training of the production avatar models depends on.
+          </p>
+          <p class="entry__tech">Python, Apache Spark, Argo Workflows</p>
+        </article>
+
+        <!-- 3 -->
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Exploring NeRF beyond COLMAP</h3>
+            <span class="entry__year">2022</span>
+          </div>
+          <p class="entry__meta">Bachelor thesis, ITU</p>
+          <p class="entry__desc">
+            My bachelor thesis. NeRF normally relies on COLMAP (Structure-from-Motion) to recover camera poses,
+            which is slow and fragile. I built a lightweight hardware rig that captures calibrated poses directly,
+            so the pipeline runs from calibration into NeRF and out to rendered views and a 3D mesh. It handles
+            small, inwards-bounded objects, faster and cheaper than COLMAP.
+          </p>
+          <p class="entry__tech">Python, PyTorch, NeRF, custom capture hardware</p>
+        </article>
+
+        <!-- 4 -->
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title"><a class="entry__title-link" href="https://botvee.ai" target="_blank"
+                rel="noopener">BotVee</a></h3>
+            <span class="entry__year">live product</span>
+          </div>
+          <p class="entry__meta">Personal project</p>
+          <p class="entry__desc">
+            A live AI sales-and-support agent for online stores. BotVee trains on a store's own content, then
+            answers customers across web chat, WhatsApp, and email, recommending products and capturing leads.
+            Under the hood it is an agentic system: an intent-routing engine running multi-step workflows (CRM
+            sync, meeting scheduling) over external APIs, with a RAG pipeline and human-in-the-loop handoff.
+          </p>
+          <p class="entry__tech">Python, FastAPI, OpenAI &amp; Anthropic APIs, vector databases, LangChain</p>
+          <div class="entry__links">
+            <a href="https://botvee.ai" target="_blank" rel="noopener">
+              Visit BotVee
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4h6v6M20 4 10 14M19 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Other projects -->
+        <div class="block" style="margin-top:2.4rem;">
+          <h3 class="block__h">Other projects</h3>
+          <div class="other-list">
+
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title"><a class="entry__title-link" href="https://edmetrix.io" target="_blank"
+                    rel="noopener">edmetriX: AI university-admissions platform</a></h3>
+              </div>
+              <p class="entry__meta">Personal project</p>
+              <p class="entry__desc">
+                A workspace that helps students worldwide find and apply to universities. An agentic AI plans each
+                student's shortlist and application steps, backed by a retrieval-augmented (RAG) pipeline over
+                programme requirements, deadlines, and funding, with counselling built in so guidance stays
+                grounded in current admissions data.
+              </p>
+              <p class="entry__tech">Agentic AI, retrieval-augmented generation (RAG), LLMs</p>
+              <div class="entry__links">
+                <a href="https://edmetrix.io" target="_blank" rel="noopener">
+                  Visit edmetriX
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 4h6v6M20 4 10 14M19 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6" />
+                  </svg>
                 </a>
-            </header>
+              </div>
+            </article>
 
-            <nav>
-                <ul>
-                    <li><a href="#about" class="active">01. About</a></li>
-                    <li><a href="#experience">02. Experience</a></li>
-                    <li><a href="#freelance">03. Freelance</a></li>
-                    <li><a href="#projects">04. Projects</a></li>
-                    <li><a href="#education">05. Education</a></li>
-                    <li><a href="#awards">08. Honours & Awards</a></li>
-                    <li><a href="#volunteering">07. Volunteering</a></li>
-                    <li><a href="#recommendations">06. Recommendations</a></li>
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">AI video-interview proctoring system</h3>
+                <span class="entry__year">2024 – 2025</span>
+              </div>
+              <p class="entry__meta">Contract, TruViz</p>
+              <p class="entry__desc">
+                A real-time proctoring system for online interviews. It combines deepfake detection, face and
+                gaze tracking, and facial-behaviour analysis to flag anomalies and verify integrity
+                automatically, and was engineered to run reliably at scale so large volumes of candidates can be
+                monitored accurately without a person watching every session.
+              </p>
+              <p class="entry__tech">Python, PyTorch, OpenCV</p>
+              <div class="entry__links">
+                <a href="https://truviz.ai" target="_blank" rel="noopener">
+                  truviz.ai
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 4h6v6M20 4 10 14M19 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6" />
+                  </svg>
+                </a>
+              </div>
+            </article>
 
-                </ul>
-            </nav>
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">Cancerous blood-cell detection</h3>
+                <span class="entry__year">2024</span>
+              </div>
+              <p class="entry__meta">Personal project</p>
+              <p class="entry__desc">
+                A YOLOv11 object-detection model that identifies cancerous blood cells in microscopy imagery in
+                real time. It was trained and tuned on annotated microscope datasets and reaches about 95%
+                detection accuracy, with the aim of supporting faster and more consistent screening in a
+                clinical-imaging workflow.
+              </p>
+              <p class="entry__tech">Python, PyTorch, YOLO</p>
+            </article>
 
-            <div class="socials">
-                <a href="https://github.com/ahmad-bashir9" target="_blank" aria-label="GitHub"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ahmad-bashir93/" target="_blank" aria-label="LinkedIn"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://www.upwork.com/freelancers/~01d6eeae0009c83748" target="_blank" aria-label="Upwork"><i
-                        class="fas fa-briefcase"></i></a>
-                <a href="mailto:ahmad.bashir.ahmed@gmail.com" target="_blank" aria-label="Email"><i
-                        class="fas fa-envelope"></i></a>
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">Real-time video background matting</h3>
+                <span class="entry__year">2023</span>
+              </div>
+              <p class="entry__meta">Colossyan, employment</p>
+              <p class="entry__desc">
+                Optimised a real-time video background-matting model used to separate subject from background
+                cleanly in generated video. I reworked the inference path to cut compute without degrading
+                output, improving inference efficiency by about 20% while keeping visual quality intact, with
+                enough headroom for real-time use at production scale.
+              </p>
+              <p class="entry__tech">Python, PyTorch, OpenCV</p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH & EDUCATION ============ -->
+    <section class="section" id="research">
+      <h2 class="section__label">Research &amp; education</h2>
+      <div class="section__body">
+        <p class="lead-in">
+          My research sits where generative modelling meets computer vision: diffusion-based generation; 3D
+          representation learning (neural radiance fields and point clouds); and audio-driven human animation
+          such as lip-sync and speech-to-video. The thread through all of it is turning careful modelling into
+          something that holds up on real data at scale.
+        </p>
+
+        <div class="block">
+          <h3 class="block__h">Thesis</h3>
+          <div class="deflist">
+            <div class="deflist__item">
+              <span class="t">Exploring NeRF Beyond the Capabilities of COLMAP</span>
+              <p class="n">Bachelor thesis, ITU. A COLMAP-free NeRF pipeline that uses custom lightweight hardware
+                to capture calibrated camera poses directly, reconstructing small objects as radiance fields and
+                3D meshes, faster and cheaper than Structure-from-Motion.</p>
             </div>
+          </div>
         </div>
 
-        <div class="right-panel">
-            <main>
-                <section id="about">
-                    <h3 class="section-title">About</h3>
-                    <p class="text-body">
-                        I am a Machine Learning Engineer with over 3 years of experience specializing in <span
-                            class="highlight">computer vision, deep learning, and real-time video processing</span>.
-                        With a BS in Computer Science from Information Technology University (ITU) Lahore, my passion
-                        lies in leveraging AI to build and optimize cutting-edge solutions.
-                    </p>
-                    <p class="text-body">
-                        Currently, as a Machine Learning Engineer at <span class="highlight">Colossyan</span>, I lead
-                        innovative projects focusing on <span class="highlight">generative AI</span> and <span
-                            class="highlight">3D vision</span>. My core technical expertise includes developing and
-                        optimizing video generation models using PyTorch and diffusion techniques, implementing deep
-                        learning for AI avatars, gesture synthesis, and speech synchronization, and improving the
-                        efficiency of real-time video processing.
-                    </p>
-                    <p class="text-body">
-                        Prior to this, I spent two years as a Research Assistant in the Intelligent Machines Lab where I
-                        pioneered PyTorch-based models for 3D reconstruction and NeRF preprocessing, even contributing
-                        to a CVPR paper submission. I'm constantly exploring the latest developments in GenAI.
-                    </p>
-                </section>
-
-                <section id="experience">
-                    <h3 class="section-title">Experience</h3>
-
-                    <a href="#" class="card">
-                        <div class="card-content">
-                            <div class="timeline-date">Dec 2022 - Present</div>
-                            <div class="card-details">
-                                <h4 class="card-title">Machine Learning Engineer</h4>
-                                <div class="card-subtitle">Colossyan · Budapest, Hungary</div>
-                                <p class="card-desc">Research and Develop ML pipelines and generative AI models for text
-                                    to video generation. Building large data processing pipelines for training
-                                    foundation models, optimizing efficiency and accuracy.</p>
-                                <div class="tags">
-                                    <span class="badge">PyTorch</span>
-                                    <span class="badge">Diffusion Filters</span>
-                                    <span class="badge">Generative AI</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" class="card">
-                        <div class="card-content">
-                            <div class="timeline-date">May 2021 - Dec 2022</div>
-                            <div class="card-details">
-                                <h4 class="card-title">Research Assistant</h4>
-                                <div class="card-subtitle">Intelligent Machines Lab @ ITU · Lahore</div>
-                                <p class="card-desc">Conducted research in 3D reconstruction and camera pose estimation
-                                    using deep learning models. Achieved high accuracy in point cloud processing and
-                                    co-authored a CVPR paper submission.</p>
-                                <div class="tags">
-                                    <span class="badge">NeRF</span>
-                                    <span class="badge">3D Vision</span>
-                                    <span class="badge">PyTorch</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="card" style="cursor: default;">
-                        <div class="card-content">
-                            <div class="timeline-date">Spring 2022</div>
-                            <div class="card-details">
-                                <h4 class="card-title">Teaching Assistant</h4>
-                                <div class="card-subtitle">Information Technology University (ITU) · Lahore, Pakistan</div>
-                                    <p class="card-desc">Assisted in teaching Parallel and Distributed Computing, mentored students, and led problem-solving sessions. Collaborated with faculty to enhance course delivery while effectively explaining complex technical concepts.
-</p>
-                                <div class="tags">
-                                    <span class="badge">Mentorship</span>
-                                    <span class="badge">Communication</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
-
-                <section id="freelance">
-                    <h3 class="section-title">Freelance & Consulting</h3>
-
-                    <a href="https://truviz.ai" target="_blank" class="card">
-                        <div class="card-content">
-                            <div class="timeline-date">6 Months</div>
-                            <div class="card-details">
-                                <h4 class="card-title">Computer Vision Engineer</h4>
-                                <div class="card-subtitle">New Jersey, US (Part-Time)</div>
-                                <ul
-                                    style="color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1.2rem; font-size: 0.95rem; line-height: 1.6;">
-                                    <li style="margin-bottom: 0.5rem;">Develop core AI technology for an AI-driven
-                                        interview proctoring system, specializing in real-time face tracking, gaze
-                                        estimation, and anomaly detection.</li>
-                                    <li style="margin-bottom: 0.5rem;">Optimize deep learning models to ensure accurate
-                                        candidate monitoring while improving system reliability and scalability.</li>
-                                    <li>Collaborate with cross-functional teams to refine AI models and integrate
-                                        advanced computer vision techniques for enhanced performance.</li>
-                                </ul>
-                                <div class="tags">
-                                    <span class="badge">OpenCV</span>
-                                    <span class="badge">Python</span>
-                                    <span class="badge">Real-time Processing</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="card" style="cursor: default;">
-                        <div class="card-content">
-                            <div class="timeline-date">7 Months</div>
-                            <div class="card-details">
-                                <h4 class="card-title">Computer Vision Consultant</h4>
-                                <div class="card-subtitle">Lahore, Pakistan (Part-Time)</div>
-                                <ul
-                                    style="color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1.2rem; font-size: 0.95rem; line-height: 1.6;">
-                                    <li style="margin-bottom: 0.5rem;">Provide project-based consulting services,
-                                        specializing in designing and implementing computer vision algorithms and
-                                        models.</li>
-                                    <li style="margin-bottom: 0.5rem;">Collaborate with engineering teams to optimize
-                                        and troubleshoot computer vision systems for improved performance and
-                                        reliability.</li>
-                                    <li>Ensure the delivery of innovative and effective AI-driven solutions by refining
-                                        models and enhancing system capabilities.</li>
-                                </ul>
-                                <div class="tags">
-                                    <span class="badge">Consulting</span>
-                                    <span class="badge">Algorithm Design</span>
-                                    <span class="badge">Optimization</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="https://operta.xyz" target="_blank" class="card">
-                        <div class="card-content">
-                            <div class="timeline-date">8 Months</div>
-                            <div class="card-details">
-                                <h4 class="card-title">AI Consultant</h4>
-                                <div class="card-subtitle">Oslo, Norway (Part-Time)</div>
-                                <ul
-                                    style="color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1.2rem; font-size: 0.95rem; line-height: 1.6;">
-                                    <li style="margin-bottom: 0.5rem;">Developed AI solutions for real estate platform at Operta,
-                                    leveraging cutting-edge technology to enhance user experience.</li>
-                                    <li style="margin-bottom: 0.5rem;">Implemented
-                                    intelligent features to revolutionize technology interaction.</li>
-                                </ul>
-                                <div class="tags">
-                                    <span class="badge">System Design</span>
-                                    <span class="badge">Python</span>
-                                    <span class="badge">Agentic AI</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
-
-
-                <section id="projects">
-                    <h3 class="section-title">Projects</h3>
-
-                    <a href="#" class="card">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">BotVee AI: Enterprise Agentic AI Chatbot SaaS</h4>
-                                <p class="card-desc">Engineered a multi-tenant platform utilizing Next.js and n8n to orchestrate high-throughput Agentic AI workflows and RAG pipelines. Scaled system architecture to handle 100k+ concurrent queries using pgvector, Redis caching, and automated Stripe usage-based billing.</p>
-                                <div class="tags">
-                                    <span class="badge">Open AI RAG</span>
-                                    <span class="badge">Agentic AI</span>
-                                    <span class="badge">n8n Automation</span>
-                                    <span class="badge">VLLMs</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="card">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">AI-Powered Video Proctoring System</h4>
-                                <p class="card-desc">Built a real-time AI-driven video interview proctoring system
-                                    incorporating deepfake detection, gaze tracking, and facial behavior analysis,
-                                    scalable to monitor 10,000+ candidates.</p>
-                                <div class="tags">
-                                    <span class="badge">Python</span>
-                                    <span class="badge">OpenCV</span>
-                                    <span class="badge">AI Avatars</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" class="card">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Neural Radiance Fields Without COLMAP</h4>
-                                <p class="card-desc">Pioneered a novel NeRF-based 3D reconstruction approach that
-                                    eliminated Structure-from-Motion dependencies, enabling reconstruction of
-                                    texture-poor surfaces.</p>
-                                <div class="tags">
-                                    <span class="badge">NeRF</span>
-                                    <span class="badge">3D Reconstruction</span>
-                                    <span class="badge">PyTorch</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" class="card">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Real-Time Video Background Matting</h4>
-                                <p class="card-desc">Optimized an AI model at Colossyan for seamless real-time video
-                                    background removal, significantly improving visual quality and processing
-                                    efficiency.</p>
-                                <div class="tags">
-                                    <span class="badge">Computer Vision</span>
-                                    <span class="badge">AI Models</span>
-                                    <span class="badge">Real-time Processing</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" class="card">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Cancerous Blood Cell Detection</h4>
-                                <p class="card-desc">Developed a YOLOv11-based deep learning model for real-time
-                                    detection of cancerous blood cells, achieving 95% accuracy on microscopic datasets.
-                                </p>
-                                <div class="tags">
-                                    <span class="badge">YOLOv11</span>
-                                    <span class="badge">Medical Imaging</span>
-                                    <span class="badge">Object Detection</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" class="card">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">AI-Powered Document Processing</h4>
-                                <div class="card-subtitle">Computer Vision Engineer</div>
-                                <p class="card-desc">Focused on large-scale document processing by extracting meaningful
-                                    text and classifying key fields from unstructured PDF documents. Used Vision LLM,
-                                    YOLO, and OCR to enhance automation and accuracy.</p>
-                                <div class="tags">
-                                    <span class="badge">OCR</span>
-                                    <span class="badge">Document Analysis</span>
-                                    <span class="badge">Vision LLM</span>
-                                    <span class="badge">NLP</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" class="card">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">AI-Powered DXF Generation for Laser Cutting</h4>
-                                <div class="card-subtitle">Computer Vision Engineer</div>
-                                <p class="card-desc">Automates DXF file generation from user-submitted images,
-                                    optimizing workflows for laser cutting. Features precise contour detection using a
-                                    0.5-inch square reference and an adjustable offset for perfect fitment.</p>
-                                <div class="tags">
-                                    <span class="badge">Deep Learning</span>
-                                    <span class="badge">YOLO</span>
-                                    <span class="badge">Object Detection</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" class="card">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Image Segmentation for Crystal MoS2 Analysis</h4>
-                                <div class="card-subtitle">Computer Vision Engineer</div>
-                                <p class="card-desc">Refined an image segmentation algorithm to classify MoS2 crystal
-                                    images into four classes. The work includes model improvements, metric optimization,
-                                    and GUI development, enabling precise atomic-level analysis.</p>
-                                <div class="tags">
-                                    <span class="badge">Image Segmentation</span>
-                                    <span class="badge">Object Detection</span>
-                                    <span class="badge">YOLO</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#" class="card">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Ports Classification System</h4>
-                                <div class="card-subtitle">Computer Vision Engineer</div>
-                                <p class="card-desc">Developed a high-accuracy classification system to identify six
-                                    computer ports using image processing and machine learning. Enhanced automation in
-                                    hardware diagnostics and inventory management.</p>
-                                <div class="tags">
-                                    <span class="badge">Object Detection</span>
-                                    <span class="badge">Classification</span>
-                                    <span class="badge">YOLO</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
-
-                <section id="education">
-                    <h3 class="section-title">Education</h3>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="timeline-date">2018 - 2022</div>
-                            <div class="card-details">
-                                <h4 class="card-title">BS in Computer Science</h4>
-                                <div class="card-subtitle">Information Technology University (ITU) · Lahore, Pakistan
-                                </div>
-                                <p class="card-desc">Graduated with a strong foundation in artificial intelligence and computer vision principles.
-                                    Served as Teaching Assistant and Event
-                                    Management Lead for different clubs and societies.</p>
-                                <div class="tags">
-                                    <span class="badge badge-alt">Specialized in Computer Vision</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="timeline-date">Certification</div>
-                            <div class="card-details">
-                                <h4 class="card-title">TOEFL iBT (English Language Test)</h4>
-                                <div class="card-subtitle">Test of English as a Foreign Language</div>
-                                <p class="card-desc">Achieved an advanced proficiency score demonstrating strong
-                                    communication skills in English across reading, listening, speaking, and writing.
-                                </p>
-                                <div class="tags">
-                                    <span class="badge badge-alt">Score: 103 / 120</span>
-                                    <span class="badge badge-alt">Fluent English</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
-
-                <section id="awards">
-                    <h3 class="section-title">Honours & Awards</h3>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">IEEE Xtreme Programming Competition</h4>
-                                <div class="card-subtitle">Institute of Electrical and Electronics Engineers (IEEE)</div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Ignite CyberSecurity Hackathon Pakistan</h4>
-                                <div class="card-subtitle">Speed Programming · Ignite Pakistan</div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Superior Technical Symposium STS</h4>
-                                <div class="card-subtitle">Programming Competition · Superior University Lahore</div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Bootcamp on Python Fundamentals</h4>
-                                <div class="card-subtitle">Google Developers Student Club ITU</div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Workshop on Leadership Skills</h4>
-                                <div class="card-subtitle">Youth Development Center Murree</div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
-
-                <section id="volunteering">
-                    <h3 class="section-title">Volunteering</h3>
-
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="timeline-date">2025</div>
-                            <div class="card-details">
-                                <h4 class="card-title">Fundraiser</h4>
-                                <div class="card-subtitle">Kar-e-Kamal ITU</div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="timeline-date">2021</div>
-                            <div class="card-details">
-                                <h4 class="card-title">Event Management Lead</h4>
-                                <div class="card-subtitle">Google Developers Student Club ITU</div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="timeline-date">2020</div>
-                            <div class="card-details">
-                                <h4 class="card-title">Membership Team Lead</h4>
-                                <div class="card-subtitle">IEEE ITU Student Branch</div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="timeline-date">2020</div>
-                            <div class="card-details">
-                                <h4 class="card-title">Organizing Team Member</h4>
-                                <div class="card-subtitle">HULT Prize ITU Lahore</div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
-
-                
-
-                <section id="recommendations">
-                    <h3 class="section-title">LinkedIn Recommendations</h3>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Safdar Aqeel, PhD</h4>
-                                <div class="card-subtitle">Principal Architect | CEO at Operta</div>
-                                <p class="card-desc" style="font-style: italic;">"He is a strong team player who
-                                    collaborates naturally with others, while also being fully capable of working
-                                    independently and taking ownership of his responsibilities. He is reliable,
-                                    responsible, and consistently delivers on his commitments. He is eager to learn and
-                                    grow, open to feedback, and quick to develop new skills. Ahmad brings forward ideas
-                                    and demonstrates creativity in problem-solving..."</p>
-                                <div class="tags">
-                                    <span class="badge badge-alt">Solution-Oriented</span>
-                                    <span class="badge badge-alt">Manager</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Arsalan Malek</h4>
-                                <div class="card-subtitle">Senior Machine Learning Engineer at Colossyan</div>
-                                <p class="card-desc" style="font-style: italic;">"I work with Ahmad at Colossyan, and it
-                                    is always a great experience working with him. He has strong understanding of
-                                    research and pragmatic workflows. Ahmad approaches complex problems with clarity,
-                                    creativity, and a strong sense of ownership. He is reliable, with affective
-                                    communication with the team."</p>
-                                <div class="tags">
-                                    <span class="badge badge-alt">Creativity</span>
-                                    <span class="badge badge-alt">Colleague</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a class="card" style="cursor: default; pointer-events: none;">
-                        <div class="card-content">
-                            <div class="card-details">
-                                <h4 class="card-title">Arham Ali</h4>
-                                <div class="card-subtitle">Machine Learning Engineer at Colossyan</div>
-                                <p class="card-desc" style="font-style: italic;">"Ahmad played a key role in onboarding
-                                    me and was instrumental in automating our Avatar pipeline, managing everything from
-                                    preprocessing to production results. His problem-solving abilities and attention to
-                                    detail were crucial in streamlining the entire process... His communication,
-                                    technical expertise, and proactive approach to challenges make him a standout
-                                    colleague."</p>
-                                <div class="tags">
-                                    <span class="badge badge-alt">Technical Expertise</span>
-                                    <span class="badge badge-alt">Colleague</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                </section>
-
-            </main>
+        <div class="block">
+          <h3 class="block__h">Publications</h3>
+          <div class="deflist">
+            <div class="deflist__item">
+              <span class="t">3D point-cloud upsampling (co-author)</span>
+              <p class="n">Co-authored a research paper on a novel method for 3D point-cloud upsampling,
+                submitted to CVPR (Conference on Computer Vision and Pattern Recognition).</p>
+            </div>
+          </div>
         </div>
-    </div>
 
-    <script src="script.js"></script>
+        <div class="block">
+          <h3 class="block__h">Education</h3>
+          <div class="deflist">
+            <div class="deflist__item">
+              <div class="entry__head">
+                <span class="t">BSc, Computer Science</span>
+                <span class="entry__year">2018 – 2022</span>
+              </div>
+              <span class="s">Information Technology University of the Punjab, Lahore</span>
+              <p class="n">Coursework in machine learning, computer vision, deep learning, parallel &amp;
+                distributed computing, robotics, and artificial intelligence.</p>
+              <p class="n">Languages: English (professional proficiency, C1; TOEFL iBT 103/120), Urdu (native),
+                and German (basic, A2).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <h3 class="block__h">Awards</h3>
+          <ul class="compact-list">
+            <li><span class="y">2021</span> &nbsp;2nd place nationally, IEEE Xtreme programming competition</li>
+            <li><span class="y">2021</span> &nbsp;2nd place, Superior Technical Symposium programming competition</li>
+            <li><span class="y">2022</span> &nbsp;Top-5 finalist, Ignite national cybersecurity hackathon</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <h2 class="section__label">Experience</h2>
+      <div class="section__body">
+
+        <article class="role">
+          <div class="role__head">
+            <h3 class="role__title">Senior Machine Learning Engineer, <a class="role__org"
+                href="https://www.colossyan.com" target="_blank" rel="noopener">Colossyan</a></h3>
+            <span class="role__dates">Dec 2022 – present</span>
+          </div>
+          <p class="role__place">Budapest, Hungary (remote)</p>
+          <ul class="role__points">
+            <li>Redesigned the core avatar-generation pipeline (lip-sync, gesture synthesis, and speech-to-video),
+              improving fidelity by roughly 20%.</li>
+            <li>Architected a distributed video-data pipeline on Apache Spark and Argo Workflows that processed
+              10,000+ hours of raw video through six quality filters, producing the curated training set for
+              production avatar models.</li>
+            <li>Lead diffusion-model R&amp;D for avatar synthesis, taking techniques from paper to production
+              deployment.</li>
+          </ul>
+        </article>
+
+        <article class="role">
+          <div class="role__head">
+            <h3 class="role__title">Research Assistant, <a class="role__org" href="https://im.itu.edu.pk/"
+                target="_blank" rel="noopener">Intelligent Machines Lab, ITU</a></h3>
+            <span class="role__dates">Jun 2021 – Nov 2022</span>
+          </div>
+          <p class="role__place">Lahore, Pakistan</p>
+          <ul class="role__points">
+            <li>Built PyTorch models for 3D reconstruction, NeRF preprocessing, and point-cloud processing,
+              improving reconstruction accuracy by about 15%.</li>
+            <li>Implemented camera-pose-estimation algorithms reaching roughly 90% accuracy on benchmark
+              datasets.</li>
+            <li>Co-authored a 3D point-cloud upsampling paper submitted to CVPR.</li>
+          </ul>
+        </article>
+
+        <article class="role role--minor">
+          <div class="role__head">
+            <h3 class="role__title">Teaching Assistant, Parallel &amp; Distributed Computing, <span
+                class="role__org">ITU</span></h3>
+            <span class="role__dates">2021 – 2022</span>
+          </div>
+          <p class="role__place">Mentored students and ran problem-solving sessions alongside the course staff.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <h2 class="section__label">About</h2>
+      <div class="section__body">
+        <p>
+          I move between research and production. My research background (NeRF, point clouds, pose estimation)
+          shapes how I build systems: curate data carefully, measure what actually matters, and design pipelines
+          other people can build on. At Colossyan that means turning generative-video research into avatar and
+          lip-sync systems that run reliably at scale.
+        </p>
+
+        <div class="skills" style="margin-top:2rem;">
+          <div class="skills__group">
+            <h3 class="block__h">Modelling &amp; research</h3>
+            <p>Diffusion models (Stable Diffusion), Transformers, generative video, neural radiance fields,
+              3D reconstruction, point-cloud processing, object detection (YOLO), CLIP, Segment Anything (SAM).
+              PyTorch, TensorFlow, Scikit-Learn. Python, C++, SQL, TypeScript.</p>
+          </div>
+          <div class="skills__group">
+            <h3 class="block__h">ML systems &amp; deployment</h3>
+            <p>Distributed data processing (Apache Spark, Argo Workflows), model deployment (ONNX, Docker,
+              Kubernetes, AWS EC2/S3), real-time video inference (FFmpeg, OpenCV), experiment tracking
+              (Weights &amp; Biases, TensorBoard), CI/CD.</p>
+          </div>
+          <div class="skills__group">
+            <h3 class="block__h">LLM applications</h3>
+            <p>Retrieval-augmented generation, agentic workflows, LangChain and LangGraph, the Model Context
+              Protocol (MCP), vector databases, FastAPI, vision-language models, OCR and document understanding.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <h2 class="section__label">Contact</h2>
+      <div class="section__body">
+        <p>
+          I'm open to machine-learning and research-engineering roles, and to funded master's and research
+          opportunities. I'm always glad to talk about generative video, computer vision, or 3D. Email is the
+          best way to reach me.
+        </p>
+        <div class="contact__links">
+          <a href="mailto:ahmad.bashir.ahmed@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" /><path d="m3 7 9 6 9-6" />
+            </svg>
+            ahmad.bashir.ahmed@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/ahmad-bashir93/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" /></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/ahmad-bashir9" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.6 8.2 11.16.6.11.82-.25.82-.56v-2.02c-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.33-1.74-1.33-1.74-1.09-.73.08-.72.08-.72 1.2.08 1.83 1.21 1.83 1.21 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.84 0-1.29.47-2.35 1.24-3.18-.12-.3-.54-1.51.12-3.15 0 0 1.01-.32 3.3 1.21a11.6 11.6 0 0 1 6 0c2.29-1.53 3.3-1.21 3.3-1.21.66 1.64.24 2.85.12 3.15.77.83 1.24 1.89 1.24 3.18 0 4.54-2.81 5.54-5.49 5.83.43.37.81 1.1.81 2.22v3.29c0 .31.21.68.82.56C20.56 21.88 24 17.48 24 12.29 24 5.78 18.63.5 12 .5Z" /></svg>
+            GitHub
+          </a>
+          <a href="assets/Ahmad_Bashir_CV.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16" />
+            </svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer shell">
+    <span>© <span id="year">2026</span> Ahmad Bashir, Lahore, Pakistan</span>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

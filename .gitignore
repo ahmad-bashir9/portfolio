@@ -1,0 +1,10 @@
+# Raw source CVs are kept locally only.
+# The public, downloadable CV is assets/Ahmad_Bashir_CV.pdf (a copy of the latest).
+# These root files hold a little more personal detail and should not be published.
+/ahmad_bashir_resume.pdf
+/ahmad_bashir_resume_04_05.pdf
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
